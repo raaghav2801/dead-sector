@@ -139,6 +139,14 @@ regressions are catchable headlessly, and that's the expected workflow here:
 
 These harness scripts are not committed; they were written to a scratchpad.
 
+## Git workflow
+
+Feature branches + PRs into `main`, not direct commits to `main`. This project
+has ongoing work planned (balance passes, sound, new levels/enemies), so `main`
+stays a clean, always-playable history and each feature gets its own revertible
+branch. Branch names: `feature/<name>`, `fix/<name>`, `docs/<name>`. Delete a
+branch after it merges.
+
 ## Gotchas
 
 - Mouse position must be converted to canvas pixels
