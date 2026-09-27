@@ -1,0 +1,27 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #07060b;
+  overflow: hidden;
+}
+
+#wrap {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 960x640 logical pixels, scaled up whole-pixel-crisp and letterboxed */
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  background: #0d0b14;
+  width: min(100vw, 150vh);
+  height: auto;
+  aspect-ratio: 3 / 2;
+  cursor: none;
+  box-shadow: 0 0 0 2px #2a2440, 0 0 60px rgba(0, 0, 0, 0.9);
+  touch-action: none;
+}
